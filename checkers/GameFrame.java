@@ -8,6 +8,11 @@ public class GameFrame extends JFrame {
     public GameFrame(Game game) {
         super("Checkers");
 
+        Image icon = Toolkit.getDefaultToolkit()
+                .getImage(getClass().getResource("/icon.png"));
+
+        setIconImage(icon);
+
         JLabel statusLabel = new JLabel("", SwingConstants.CENTER);
         statusLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
         statusLabel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
