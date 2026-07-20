@@ -1,7 +1,7 @@
 package checkers;
 
 public class Piece {
-
+    // piece owner
     public enum PieceColor {
         RED, BLACK
     }
@@ -39,10 +39,12 @@ public class Piece {
         this.col = col;
     }
 
+    // Promotes this piece to a king.
     public void promoteToKing() {
         this.isKing = true;
     }
 
+    // Returns the normal movement direction.
     public int getForwardDirection() {
         return (color == PieceColor.RED) ? -1 : 1;
     }

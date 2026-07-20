@@ -3,13 +3,19 @@ package checkers;
 import javax.swing.*;
 import java.awt.*;
 
+/*
+ * Main game window.
+ * Creates the board, status label,
+ * and control buttons.
+ */
 public class GameFrame extends JFrame {
 
     public GameFrame(Game game) {
         super("Checkers");
 
+        // Set the application icon.
         Image icon = Toolkit.getDefaultToolkit()
-                .getImage(getClass().getResource("/icon.png"));
+                .getImage(getClass().getResource("/icon1.png"));
 
         setIconImage(icon);
 
@@ -19,6 +25,7 @@ public class GameFrame extends JFrame {
 
         BoardPanel boardPanel = new BoardPanel(game, statusLabel);
 
+        // Create the control panel.
         JButton undoButton = new JButton("Undo");
         undoButton.addActionListener(e -> boardPanel.undoLastMove());
         JPanel controlsPanel = new JPanel();
