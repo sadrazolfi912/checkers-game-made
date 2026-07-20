@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<!--
+    Main menu layout.
+    A full-screen video is used as the background,
+    while the menu buttons are centered on top.
+-->
+<StackPane fx:id="rootPane"
+           xmlns="http://javafx.com/javafx/25"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="menu.MenuController"
+           stylesheets="@../resources/menu.css"
+           prefWidth="1280"
+           prefHeight="720">
+
+    <!-- Background video -->
+    <MediaView fx:id="videoView"
+               preserveRatio="false"
+               fitWidth="1280"
+               fitHeight="720" />
+
+    <!-- Main menu buttons -->
+    <VBox fx:id="menuBox"
+          alignment="CENTER"
+          spacing="28"
+          visible="false"
+          StackPane.alignment="CENTER">
+
+        <Button fx:id="newGameButton"
+                text="NEW GAME"
+                onAction="#newGame"
+                styleClass="button"
+                minWidth="360"
+                prefWidth="360"
+                minHeight="80"
+                prefHeight="80" />
+
+        <Button fx:id="exitButton"
+                text="EXIT"
+                onAction="#exit"
+                styleClass="button"
+                minWidth="250"
+                prefWidth="250"
+                minHeight="60"
+                prefHeight="60" />
+
+    </VBox>
+
+</StackPane>
