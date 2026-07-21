@@ -1,97 +1,125 @@
-# ♟️ Checkers Game
+# CHECKERS GAME
 
-A modern two-player **Checkers Game** built with **Java 25** and **JavaFX 25**.
+A modern desktop Checkers game developed with **Java 25** and **JavaFX 25**.
 
-🎮 **Gameplay Preview**
+The project features a graphical user interface, an animated main menu, background video and music, and local two-player gameplay.
 
 <p align="center">
-  <img src="resources/Gamepreview.gif" alt="Gameplay Preview" width="800">
+  <img src="resources/Gamepreview.gif" alt="Gameplay Preview" width="850">
 </p>
 
 ---
 
-## ✨ Features
+## Overview
 
-- 🎮 Clean and modern main menu
-- 👥 Local two-player gameplay
-- 🎨 Smooth graphical interface with JavaFX
-- ⚡ Fast and lightweight desktop application
-- 📦 Available in **v1** and **v2**
-- 📄 Executable **JAR** included
-- 💻 Windows **Installer** included
+This project was developed as a desktop implementation of the classic Checkers game.  
+It includes a modern JavaFX-based menu, multimedia support, and a complete local multiplayer experience.
 
 ---
 
-## 🛠️ Requirements
+## Features
 
-Before running the game, make sure you have:
-
-- ☕ **Java JDK 25**
-- 🎨 **JavaFX SDK 25**
-
-> **⚠️ Important**
->
-> JavaFX **must be installed**, and the **JavaFX library path** must be configured correctly.
-> Otherwise, the game will not start.
-
----
-
-## 🚀 Getting Started
-
-### 📄 Run using the JAR
-
-Run the JAR file after configuring JavaFX.
-
-### 💻 Run using the Installer
-
-Install the application using the provided installer and launch the game.
+- Modern graphical user interface
+- Animated main menu
+- Background video
+- Background music
+- Local two-player gameplay
+- Custom game icon and cursor
+- Executable JAR release
+- Windows Installer
+- Two project versions (v1 & v2)
 
 ---
 
-## 📚 Versions
+## Technologies
 
-| Version | Description |
-|---------|-------------|
-| 🟢 **v1** | Initial release |
-| 🔵 **v2** | Improved version with refinements |
-
----
-
-## 🧰 Built With
-
-- ☕ Java 25
-- 🎨 JavaFX 25
-- 🌿 Git
-- 🐙 GitHub
+| Technology | Version |
+|------------|---------|
+| Java | 25 |
+| JavaFX | 25 |
+| Git | Latest |
+| GitHub | Repository Hosting |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
-src/
+CHECKERS-GAME-MADE/
+│
+├── app/
+│
 ├── checkers/
+│   ├── Board.java
+│   ├── BoardPanel.java
+│   ├── Game.java
+│   ├── GameFrame.java
+│   ├── Main.java
+│   ├── Piece.java
+│   ├── Player.java
+│   └── Tile.java
+│
 ├── menu/
+│   ├── MainMenu.java
+│   ├── MenuController.java
+│   └── menu.fxml
+│
 ├── resources/
-├── media/
-└── css/
+│   ├── background.mp4
+│   ├── Gamepreview.gif
+│   ├── menu.css
+│   ├── mouse.png
+│   ├── sound.mp3
+│   ├── icon.png
+│   ├── icon1.png
+│   └── iconn1.ico
+│
+├── installer/
+│
+├── manifest.txt
+│
+└── README.md
 ```
 
 ---
 
-## 📝 Notes
+## Requirements
 
-If the game doesn't start, check the following:
+Before running the project, make sure the following software is installed:
 
-- ✅ Java JDK 25 is installed.
-- ✅ JavaFX SDK 25 is installed.
-- ✅ The JavaFX library path is configured correctly.
-- ✅ All required JavaFX modules are added.
+- Java JDK 25
+- JavaFX SDK 25
 
 ---
 
-## 👨‍💻 Author
+## Running the Project
 
-Developed with ❤️ by **Sadra**
+The application can be executed using:
 
-⭐ If you enjoyed this project, consider giving it a star!
+- The provided **JAR** file
+- The provided **Windows Installer**
+
+> **Important**
+>
+> JavaFX is **not included** with the JDK.
+> Before running the project, install **JavaFX SDK 25** and configure the **JavaFX library path** correctly in your IDE or launch configuration.
+
+---
+
+## Releases
+
+| Version | Description |
+|---------|-------------|
+| v1 | Initial Release |
+| v2 | Improved Version with Menu and Multimedia Support |
+
+---
+
+## Preview
+
+The gameplay preview is available below.
+
+```
+resources/Gamepreview.gif
+```
+
