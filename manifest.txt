@@ -1,3 +1,4 @@
-Main-Class: checkers.Main
+Main-Class: menu.MainMenu
+
 
 

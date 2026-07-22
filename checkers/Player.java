@@ -9,11 +9,15 @@ public class Player {
     private Piece.PieceColor color;
     private List<Piece> pieces;
 
+    // constructor
+
     public Player(String id, Piece.PieceColor color) {
         this.Id = id;
         this.color = color;
         this.pieces = new ArrayList<>();
     }
+
+    // using method for access to private fields of class 
 
     public String getId() {
         return Id;
@@ -27,6 +31,8 @@ public class Player {
         return pieces;
     }
 
+    // methods that related to pieces /add /remove /empty
+    
     public void addPiece(Piece piece) {
         pieces.add(piece);
     }

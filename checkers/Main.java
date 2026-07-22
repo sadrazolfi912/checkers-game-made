@@ -6,6 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //starting flag via taking names and making obj Game / GameFrame 
+        
         SwingUtilities.invokeLater(() -> {
             String player1Id = askForPlayerId("Player 1 (Red)", "Player1");
             String player2Id = askForPlayerId("Player 2 (Black)", "Player2");
@@ -16,6 +18,8 @@ public class Main {
         });
     }
 
+    // taking the name of each players 
+
     private static String askForPlayerId(String promptLabel, String defaultId) {
         String input = JOptionPane.showInputDialog(
                 null,
@@ -23,6 +27,8 @@ public class Main {
                 "Start Checkers Game",
                 JOptionPane.QUESTION_MESSAGE
         );
+
+        // checking the input for being valid
 
         if (input == null || input.trim().isEmpty()) {
             return defaultId;

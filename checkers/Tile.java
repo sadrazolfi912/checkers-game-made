@@ -1,10 +1,12 @@
 package checkers;
 
 public class Tile {
+    // Tile color.
 
     public enum TileColor {
         DARK, LIGHT
     }
+    // Occupancy state.
 
     public enum TileStatus {
         EMPTY, OCCUPIED
@@ -43,11 +45,13 @@ public class Tile {
     public Piece getPiece() {
         return piece;
     }
+    // Updates both the piece and tile status.
 
     public void setPiece(Piece piece) {
         this.piece = piece;
         this.status = (piece == null) ? TileStatus.EMPTY : TileStatus.OCCUPIED;
     }
+    // Removes the piece from this tile.
 
     public void clear() {
         this.piece = null;
